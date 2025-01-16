@@ -1,0 +1,25 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.react-phone-input-2.rendered input {
+  width: 100% !important;
+}
+
+.react-phone-input-2 .selected-flag {
+  background-color: white !important;
+}
+
+.react-phone-input-2 .country-list {
+  width: 350px;
+}
+
+@media (max-width: 640px) {
+  .react-phone-input-2 .country-list {
+    width: 280px;
+  }
+}
