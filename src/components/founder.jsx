@@ -11,7 +11,10 @@ const FounderSection = () => {
     <section className="relative bg-black">
       {/* Top Wave */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden">
-        <div className="w-full h-32 bg-[#4D96FF] transform -skew-y-6 origin-top-left translate-y-[-50%]" />
+        <div className="w-full h-14 bg-[#76B6FF] transform -skew-y-6 origin-top-left translate-y-[-50%]" />
+      </div>
+      <div className="absolute top-0 left-0 right-0 overflow-hidden">
+        <div className="w-full h-14 bg-[#4FA0FF] transform skew-y-6 origin-top-right translate-y-[-50%]" />
       </div>
 
       <div className="mx-40 px-4 lg:px-8 py-20 lg:py-32">
@@ -23,30 +26,30 @@ const FounderSection = () => {
                 FOUNDER
               </h3>
               <div>
-                <h2 className="text-5xl lg:text-7xl font-extrabold tracking-tight">
+                <h2 className="text-8xl  font-extrabold tracking-tight font-sofia">
                   ALEX
                 </h2>
-                <h2 className="text-5xl lg:text-7xl font-extrabold tracking-tight text-[#4D96FF]">
+                <h2 className="text-8xl  font-extrabold tracking-tight text-[#4D96FF] font-sofia">
                   GONZALES
                 </h2>
               </div>
             </div>
 
-            <div className="space-y-4 text-lg lg:text-xl">
-              <p className="leading-relaxed">
+            <div className="space-y-4 text-lg lg:text-xl ml-10">
+              <p className="leading-relaxed font-bold text-3xl font-sofia">
                 6 years of active experience in cryptocurrencies
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed font-bold text-3xl font-sofia">
                 Earned {">"}1.000.000€ for his career in crypto
               </p>
-              <p className="leading-relaxed">
-                At the age of 23 bought apartment in Dubai, visited 30 countries
+              <p className="leading-relaxed font-bold text-3xl font-sofia">
+                At the age of 23 bought apartment in Dubai,<br/> visited 30 countries
               </p>
-              <p className="leading-relaxed">
-                Spoke at {">"}30 events, dedicated to cryptocurrencies around
+              <p className="leading-relaxed font-bold text-3xl font-sofia">
+                Spoke at {">"}30 events, dedicated to cryptocurrencies <br/> around
                 the world
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed font-bold text-3xl font-sofia">
                 In my team 2000+ people make money with my team
               </p>
             </div>

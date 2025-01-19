@@ -13,7 +13,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden ">
       <Particles
         className="absolute inset-0"
         init={particlesInit}
@@ -69,7 +69,7 @@ const HeroSection = () => {
       </div>
 
       {/* Top banner - Now absolutely positioned */}
-      <div className="absolute top-0 left-[22.5%] transform -translate-x-1/2 inline-flex items-center bg-white rounded-b-lg space-x-6 p-6  h-28 z-50">
+      <div className="absolute top-0 left-[22.5%] transform -translate-x-1/2 inline-flex items-center bg-white rounded-b-lg space-x-6 p-6  h-28 z-50  ">
         <div>
           <p className="text-sm text-[#212529] font-medium text-center">ONLY</p>
           <p className="text-[#212529] font-bold text-xl">TODAY</p>
@@ -145,7 +145,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <span className="text-2xl font-bold">
-                    Minimum investment <br/> is only 250 EURO
+                    Minimum investment <br /> is only 250 EURO
                   </span>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -156,7 +156,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <span className="text-2xl font-bold">
-                    Start making profits <br/> in the first week
+                    Start making profits <br /> in the first week
                   </span>
                 </div>
               </div>
@@ -310,8 +310,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };

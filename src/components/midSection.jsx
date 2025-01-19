@@ -4,6 +4,7 @@ import image2 from "../assets/picture-u-2.jpg";
 import image3 from "../assets/picture-u-3.jpg";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import { ChevronsDown } from "lucide-react";
 
 const MidSection = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -88,7 +89,7 @@ const MidSection = () => {
       />
       <div className="bg-black ">
         <div className="container mx-auto px-4 pt-16 pb-24 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
+          <h1 className="text-4xl md:text-8xl font-bold leading-tight text-white font-sofia">
             THIS CALL WILL BE USEFUL
             <br />
             FOR YOU:
@@ -99,9 +100,9 @@ const MidSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="rounded-2xl overflow-hidden h-full flex flex-col bg-gradient-to-b from-gray-900 to-black shadow-2xl hover:shadow-blue-500/50 transition-shadow duration-300 border border-blue-500/20"
+              className=" overflow-hidden h-full flex flex-col bg-gradient-to-b from-gray-900 to-black shadow-2xl hover:shadow-blue-500/50 transition-shadow duration-300 border border-blue-500/20 rounded-xl"
             >
-              <div className="relative w-full pt-[56.25%] group">
+              <div className="relative w-full pt-[56.25%]">
                 <div className="absolute inset-0 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10" />
                   <img
@@ -111,28 +112,16 @@ const MidSection = () => {
                   />
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-4 flex flex-col flex-grow">
-                <div className="flex gap-4 mb-6">
-                  <div className="w-8 h-8 mt-1 flex-shrink-0 bg-blue-400/20 rounded-full p-1.5">
-                    <svg
-                      viewBox="0 0 24 24"
-                      className="w-full h-full text-blue-300"
-                      fill="none"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                      />
-                    </svg>
+              <div className=" flex flex-col flex-grow bg-[#061525]">
+                <div className="flex items-center gap-4  bg-gradient-to-br from-[#0E87FF] to-[#0E87FF] p-4 rounded-md">
+                  <div className="">
+                    <ChevronsDown size={53} color="#fff" />
                   </div>
                   <h3 className="text-xl font-bold text-white leading-tight">
                     {card.title}
                   </h3>
                 </div>
-                <div className="bg-black/30 rounded-xl p-6 backdrop-blur-sm">
+                <div className=" rounded-xl p-6 backdrop-blur-sm">
                   <p className="text-base text-blue-100 flex-grow leading-relaxed">
                     {card.description}
                   </p>
@@ -143,8 +132,8 @@ const MidSection = () => {
         </div>
 
         <div className="relative w-full  ">
-          <div className="absolute bottom-0 left-0 w-[51%] h-32 bg-[#fff] transform skew-y-6 origin-bottom-left"></div>
-          <div className="absolute bottom-0 right-0 w-[51%] h-32 bg-[#fff] transform -skew-y-6 origin-bottom-right"></div>
+          <div className="absolute bottom-0 left-0 w-[50%] h-32 bg-black transform skew-y-6 origin-bottom-left"></div>
+          <div className="absolute bottom-0 right-0 w-[50%] h-32 bg-black transform -skew-y-6 origin-bottom-right"></div>
         </div>
       </div>
     </>
