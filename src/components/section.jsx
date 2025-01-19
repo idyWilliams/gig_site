@@ -63,6 +63,10 @@ const LandingPage = () => {
           <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-blue-500 rounded-full filter blur-[100px] opacity-20"></div>
 
           <div className=" px-4 py-16 mx-40">
+            {/* Bottom text */}
+            <div className="text-center pb-8">
+        <p className="text-sm uppercase tracking-wider">MAXIMIZE THE VALUE</p>
+      </div>
             {/* Header */}
             <div className="text-center mb-24">
               <h1 className="text-blue-400 text-7xl font-bold mb-6">
