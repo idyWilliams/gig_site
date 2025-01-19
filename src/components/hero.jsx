@@ -69,7 +69,7 @@ const HeroSection = () => {
       </div>
 
       {/* Top banner - Now absolutely positioned */}
-      <div className="absolute top-0 left-[22.5%] transform -translate-x-1/2 inline-flex items-center bg-white rounded-b-lg space-x-6 p-6  h-28 z-50  ">
+      <div className="hidden absolute top-0 left-[22.5%] transform -translate-x-1/2 md:inline-flex items-center bg-white rounded-b-lg space-x-6 p-6  h-28 z-50  ">
         <div>
           <p className="text-sm text-[#212529] font-medium text-center">ONLY</p>
           <p className="text-[#212529] font-bold text-xl">TODAY</p>
@@ -88,6 +88,27 @@ const HeroSection = () => {
         </div>
       </div>
 
+      <div className="md:hidden  inline-flex items-center bg-white rounded-b-lg space-x-8 p-4  h-16 z-50 w-full justify-between">
+        <div>
+          <p className="text-sm text-[#212529] font-medium text-center">ONLY</p>
+          <p className="text-[#212529] font-bold text-sm md:text-xl">TODAY</p>
+        </div>
+        <div>
+          <p className="px-4 font-bold md:text-xl border-x border-slate-400 text-[#0085FF] text-center text-sm">
+            JOIN
+          </p>
+          <p className="px-4 text-sm border-x border-slate-400 text-[#212529]">
+            OUR TEAM
+          </p>
+        </div>
+        <div>
+          <p className="text-sm text-[#212529] text-center">FORMAT:</p>
+          <p className="text-sm md:text-xl text-[#212529] font-bold">
+            TRADING COMMUNITY
+          </p>
+        </div>
+      </div>
+
       <div>
         {/* Background image section */}
         <div className="absolute inset-0 z-0 before:absolute before:inset-0 ">
@@ -103,13 +124,13 @@ const HeroSection = () => {
           ></div>
         </div>
         {/* Main content container */}
-        <div className="px-4 py-12 md:py-2 relative z-10 mx-40 mt-16">
+        <div className="px-4 py-12 md:py-2 relative z-10 mx-0 md:mx-40 mt-4 md:mt-16">
           {" "}
           {/* Added mt-28 to account for banner height */}
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             {/* Left column content */}
             <div className="flex-1 space-y-8 max-w-3xl">
-              <h1 className="text-7xl font-bold font-sofia">
+              <h1 className="text-5xl md:text-7xl font-bold font-sofia">
                 JOIN MY TEAM AND <br /> START EARNING FROM <br /> TRADING{" "}
                 <span className="text-blue-500">
                   EVEN IF YOU HAVE NO EXPERIENCE IN <br /> TRADING.
@@ -124,7 +145,7 @@ const HeroSection = () => {
                       <Timer className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <span className="text-2xl font-bold">From scratch</span>
+                  <span className="text-xl md:text-2xl  font-bold">From scratch</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="relative w-16 h-16 flex items-center justify-center">
@@ -133,7 +154,7 @@ const HeroSection = () => {
                       <CalendarDays className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <span className="text-2xl font-bold">After 7 days</span>
+                  <span className="text-xl md:text-2xl  font-bold">After 7 days</span>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -144,7 +165,7 @@ const HeroSection = () => {
                       <DollarSign className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <span className="text-2xl font-bold">
+                  <span className="text-xl md:text-2xl  font-bold">
                     Minimum investment <br /> is only 250 EURO
                   </span>
                 </div>
@@ -155,7 +176,7 @@ const HeroSection = () => {
                       <Smartphone className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <span className="text-2xl font-bold">
+                  <span className="text-xl md:text-2xl  font-bold">
                     Start making profits <br /> in the first week
                   </span>
                 </div>
@@ -163,19 +184,19 @@ const HeroSection = () => {
             </div>
 
             {/* Right column - Registration card with background image */}
-            <div className="flex-1 max-w-md w-full relative">
-              <div className="relative lg:h-[700px] flex items-center justify-center">
+            <div className="flex-1 max-w-md w-full relative mb-8">
+              <div className="relative h-[700px] flex items-center justify-center">
                 {/* FOUNDER image */}
-                <div className="absolute -inset-20 z-1  right-40 ">
+                <div className="absolute -inset-20 z-1  md:right-40 ">
                   <img
                     src={main}
                     alt="Trader"
-                    className="w-[100%] h-[80%] lg:object-cover  scale-110 mt-24"
+                    className="w-[100%] h-[80%] lg:object-cover scale-110 mt-16 md:mt-24"
                   />
                 </div>
 
                 {/* Registration card */}
-                <div className="bg-[#071729] border-[#353434] border-2 backdrop-blur-sm rounded-2xl p-4 lg:p-4 space-y-6 w-[90%] lg:w-[100%] relative z-10 top-32 font-sofia -left-24">
+                <div className="bg-[#071729] border-[#353434] border-2 backdrop-blur-sm rounded-2xl p-4 lg:p-4 space-y-6 w-full md:w-[90%] lg:w-[100%] relative z-10 top-40 md:top-32 font-sofia md:-left-24">
                   <h2 className="text-5xl font-bold text-center">
                     <span className="text-[#0085FF] ">REGISTER</span>{" "}
                     <span className="text-white ">NOW</span>
@@ -291,9 +312,9 @@ const HeroSection = () => {
                     </div>
                     <div className=" ml-6">
                       <p className="text-base font-semi-bold font-sans">
-                        Get advice and step-by-step action plan of action to
-                        earn up to 500 EURO per week, even if you are a complete
-                        zero in trading
+                        Get advice and step by step action plan to earn up to
+                        500 euros per week, even if you have zero experience in
+                        trading.
                       </p>
                     </div>
                     <img

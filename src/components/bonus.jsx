@@ -5,28 +5,33 @@ const BonusSection = () => {
     <section className="w-full bg-[linear-gradient(90deg,#4D9FFF_0%,#77B6FF_0%,#4D9FFF_100%)] py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-8">
         {/* Text Content */}
-        <div className="text-center my-28">
+        <div className="text-center my-9 md:my-28">
           <h3 className="text-[#fff] text-sm md:text-base lg:text-lg font-semibold mb-4">
             BONUS ON CALL
           </h3>
 
-          <h2 className="text-[#fff] text-2xl md:text-7xl font-extrabold leading-tight mx-auto font-sofia">
+          <h2 className="text-[#fff] text-3xl md:text-7xl font-extrabold leading-tight mx-auto font-sofia hidden md:block">
             AFTER SIGNING UP, YOU WILL RECEIVE A CALL <br /> FROM A MANAGER WHO
             WILL HELP SET UP YOUR <br /> TRADING ACCOUNT TO GET YOU STARTED AND{" "}
             <br /> YOU WILL GET:
+          </h2>
+          <h2 className="text-[#fff] text-3xl md:text-7xl font-extrabold leading-tight mx-auto font-sofia">
+            AFTER SIGNING UP, YOU WILL RECEIVE A CALL FROM A MANAGER WHO WILL
+            HELP SET UP YOUR TRADING ACCOUNT TO GET YOU STARTED AND YOU WILL
+            GET:
           </h2>
         </div>
 
         {/* Rest of the component remains the same */}
         <div className="max-w-4xl mx-auto relative">
-          <div className="relative flex w-full mb-8 items-center gap-12">
+          <div className="relative flex flex-col md:flex-row w-full mb-8 items-center gap-12">
             <div>
               <div className="relative aspect-[16/9] ">
                 <div className=" rotate-12">
                   <img
                     src={frame}
                     alt="frame"
-                    className="h-[350px] w-[700px] "
+                    className="h-52 md:h-[350px] w-52 md:w-[700px] "
                   />
                 </div>
                 <div className="absolute top-0 -right-12">
@@ -86,9 +91,13 @@ const BonusSection = () => {
               </div>
             </div>
             <div className="text-center">
-              <p className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed   text-[#fff]">
-                The opportunity to discover the world of trading thanks <br/> to
-                experienced mentors and improve your financial situation
+              <p className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed  hidden md:block text-[#fff]">
+                The opportunity to discover the world of trading thanks <br />{" "}
+                to experienced mentors and improve your financial situation
+              </p>
+              <p className="text-lg md:text-xl lg:text-2xl font-normal leading-relaxed   text-[#fff] block md:hidden">
+                The opportunity to discover the world of trading thanks
+                to experienced mentors and improve your financial situation
               </p>
             </div>
           </div>

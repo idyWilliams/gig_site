@@ -88,7 +88,7 @@ const MidSection = () => {
         }}
       />
       <div className="bg-black ">
-        <div className="container mx-auto px-4 pt-16 pb-24 text-center">
+        <div className="container mx-auto px-4 pt-8 md:pt-16 pb-12 md:pb-24 text-center">
           <h1 className="text-4xl md:text-8xl font-bold leading-tight text-white font-sofia">
             THIS CALL WILL BE USEFUL
             <br />
@@ -96,7 +96,7 @@ const MidSection = () => {
           </h1>
         </div>
 
-        <div className="mx-40 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-48">
+        <div className="mx-0 md:mx-40 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-32  md:pb-48">
           {cards.map((card, index) => (
             <div
               key={index}
