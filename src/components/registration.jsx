@@ -20,7 +20,7 @@ const RegistrationForm = () => {
     try {
       await emailjs.send(
         "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "template_r4ldlyg", // Replace with your EmailJS template ID
         {
           to_email: "your-email@example.com", // Replace with your email
           from_name: `${formData.firstName} ${formData.lastName}`,
@@ -28,7 +28,7 @@ const RegistrationForm = () => {
           phone: formData.phone,
           message: `New registration from ${formData.firstName} ${formData.lastName}`,
         },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        "dvqQxy7cPoE0j2HNJY" // Replace with your EmailJS public key
       );
 
       alert("Registration successful!");
