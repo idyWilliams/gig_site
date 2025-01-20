@@ -5,6 +5,7 @@ import image3 from "../assets/picture-u-3.jpg";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { ChevronsDown } from "lucide-react";
+import PropTypes from "prop-types";
 
 const MidSection = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -138,6 +139,10 @@ const MidSection = () => {
       </div>
     </>
   );
+};
+
+MidSection.propTypes = {
+  onCTAClick: PropTypes.func.isRequired,
 };
 
 export default MidSection;

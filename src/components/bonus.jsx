@@ -1,4 +1,5 @@
 import frame from "../assets/frame.png";
+import PropTypes from "prop-types";
 
 const BonusSection = () => {
   return (
@@ -105,6 +106,9 @@ const BonusSection = () => {
       </div>
     </section>
   );
+};
+BonusSection.propTypes = {
+  onCTAClick: PropTypes.func.isRequired,
 };
 
 export default BonusSection;

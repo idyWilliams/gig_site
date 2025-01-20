@@ -5,6 +5,7 @@ import img5 from "../assets/picture-a-5.jpg";
 import img6 from "../assets/picture-a-6.jpg";
 import img from "../assets/picture.jpg";
 import { Check } from "lucide-react";
+import PropTypes from "prop-types";
 
 const FounderSection = () => {
   return (
@@ -129,6 +130,10 @@ const FounderSection = () => {
       </div> */}
     </>
   );
+};
+
+FounderSection.propTypes = {
+  onCTAClick: PropTypes.func.isRequired,
 };
 
 export default FounderSection;

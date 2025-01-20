@@ -3,6 +3,7 @@ import PhoneInput from "react-phone-input-2";
 import emailjs from "@emailjs/browser";
 import "react-phone-input-2/lib/style.css";
 import btc from "../assets/btc.png";
+// import PropTypes from "prop-types";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({

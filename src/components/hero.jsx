@@ -6,8 +6,9 @@ import bgImage from "../assets/bg.jpg";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { Timer, DollarSign, CalendarDays, Smartphone } from "lucide-react";
+import PropTypes from "prop-types";
 
-const HeroSection = () => {
+const HeroSection = ({ onCTAClick }) => {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
@@ -145,7 +146,9 @@ const HeroSection = () => {
                       <Timer className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <span className="text-xl md:text-2xl  font-bold">From scratch</span>
+                  <span className="text-xl md:text-2xl  font-bold">
+                    From scratch
+                  </span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="relative w-16 h-16 flex items-center justify-center">
@@ -154,7 +157,9 @@ const HeroSection = () => {
                       <CalendarDays className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <span className="text-xl md:text-2xl  font-bold">After 7 days</span>
+                  <span className="text-xl md:text-2xl  font-bold">
+                    After 7 days
+                  </span>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -322,7 +327,10 @@ const HeroSection = () => {
                       src={arrow}
                     ></img>
                   </div>
-                  <button className="w-full bg-[#0085FF] transition py-4 rounded-xl font-bold text-xl uppercase font-sans">
+                  <button
+                    onClick={onCTAClick}
+                    className="w-full bg-[#0085FF] transition py-4 rounded-xl font-bold text-xl uppercase font-sans"
+                  >
                     Register <br /> Right Now
                   </button>
                 </div>
@@ -333,6 +341,10 @@ const HeroSection = () => {
       </div>
     </div>
   );
+};
+
+HeroSection.propTypes = {
+  onCTAClick: PropTypes.func.isRequired,
 };
 
 export default HeroSection;

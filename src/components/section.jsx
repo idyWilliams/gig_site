@@ -3,8 +3,9 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import eth from "../assets/eth.png";
 import eth2 from "../assets/r-eth.png";
+import PropTypes from "prop-types";
 
-const LandingPage = () => {
+const LandingPage = ({ onCTAClick }) => {
   const benefits = [
     {
       text: "5 simple options for earning up to €2000 in crypto with a starting investment of 250 EURO",
@@ -199,7 +200,7 @@ const LandingPage = () => {
 
           {/* CTA Button */}
           <div className="flex justify-center">
-            <button className="bg-[#0085FF] hover:bg-blue-500 text-white text-4xl font-semibold px-20 py-8 rounded-xl transform transition-transform hover:-translate-y-1">
+            <button onClick={onCTAClick} className="bg-[#0085FF] hover:bg-blue-500 text-white text-4xl font-semibold px-20 py-8 rounded-xl transform transition-transform hover:-translate-y-1">
               TAKE PART
             </button>
           </div>
@@ -208,5 +209,7 @@ const LandingPage = () => {
     </>
   );
 };
-
+LandingPage.propTypes = {
+  onCTAClick: PropTypes.func.isRequired,
+};
 export default LandingPage;
