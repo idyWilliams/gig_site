@@ -16,7 +16,7 @@ const BonusSection = () => {
             WILL HELP SET UP YOUR <br /> TRADING ACCOUNT TO GET YOU STARTED AND{" "}
             <br /> YOU WILL GET:
           </h2>
-          <h2 className="text-[#fff] text-3xl md:text-7xl font-extrabold leading-tight mx-auto font-sofia">
+          <h2 className="text-[#fff] text-3xl md:text-7xl font-extrabold leading-tight mx-auto font-sofia md:hidden block">
             AFTER SIGNING UP, YOU WILL RECEIVE A CALL FROM A MANAGER WHO WILL
             HELP SET UP YOUR TRADING ACCOUNT TO GET YOU STARTED AND YOU WILL
             GET:
