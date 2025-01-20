@@ -20,7 +20,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route
-          path="/"
+          path="/gig_site"
           element={
             <div className="">
               <HeroSection onCTAClick={scrollToForm} />
@@ -34,8 +34,8 @@ const App = () => {
             </div>
           }
         />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/offer-agreement" element={<OfferAgreement />} />
+        <Route path="/gig_site/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/gig_site/offer-agreement" element={<OfferAgreement />} />
       </Routes>
     </Router>
   );
