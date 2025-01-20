@@ -1,12 +1,13 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BonusSection from "./components/bonus";
 import FounderSection from "./components/founder";
 import HeroSection from "./components/hero";
 import MidSection from "./components/midSection";
 import RegistrationForm from "./components/registration";
 import LandingPage from "./components/section";
+import PrivacyPolicy from "./pages/privacy-policy";
+import OfferAgreement from "./pages/offer-agreement";
 
-// Create a context or export this function to use in other components
 export const scrollToForm = () => {
   const element = document.getElementById("registration-form");
   if (element) {
@@ -15,19 +16,28 @@ export const scrollToForm = () => {
 };
 
 const App = () => {
-
-
   return (
-    <div className="">
-      <HeroSection onCTAClick={scrollToForm} />
-      <LandingPage onCTAClick={scrollToForm} />
-      <MidSection onCTAClick={scrollToForm} />
-      <BonusSection onCTAClick={scrollToForm} />
-      <FounderSection onCTAClick={scrollToForm} />
-      <div id="registration-form">
-        <RegistrationForm />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="">
+              <HeroSection onCTAClick={scrollToForm} />
+              <LandingPage onCTAClick={scrollToForm} />
+              <MidSection onCTAClick={scrollToForm} />
+              <BonusSection onCTAClick={scrollToForm} />
+              <FounderSection onCTAClick={scrollToForm} />
+              <div id="registration-form">
+                <RegistrationForm />
+              </div>
+            </div>
+          }
+        />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/offer-agreement" element={<OfferAgreement />} />
+      </Routes>
+    </Router>
   );
 };
 
